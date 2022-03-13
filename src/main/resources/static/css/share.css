@@ -1,0 +1,74 @@
+.sharer{
+    width: 216px;
+    height: 268px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+
+}
+
+.share_container{
+    position: relative;
+}
+
+.sha_artist_info{
+    display: flex;
+    align-items: center;
+    width:160px;
+    height:56px;
+    border-bottom: 1px solid #F1F1F1;
+    margin-left:28px;
+    margin-top:14px;
+}
+
+.artist_icon{
+    width: 40px;
+    height: 40px;
+}
+
+.sha_discp{
+    margin-left: 10px;
+    margin-top:3px;
+}
+
+.sha_title{
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.sha_disc{
+    font-size: 12px;
+    line-height: 17px;
+    margin-top:2px;
+    color: #A4A4A4;
+}
+
+.qrc{
+    width:104px;
+    height:104px;
+    position: absolute;
+    top:65px;
+    left:58px;
+}
+
+.wexin_share{
+    margin-top:117px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-left:66px;
+    color: #BABABA;
+}
+
+
+.share_wasToshare{
+    margin-left:29px;
+    margin-top:20px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+}
+
+

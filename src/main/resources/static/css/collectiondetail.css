@@ -1,0 +1,178 @@
+ul{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+
+li{
+    padding:0px;
+    margin:0px;
+}
+
+.co_artist_container{
+    width: 786px;
+    height: 788px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    margin-left:327px;
+    margin-top:79px;
+    position: relative;
+}
+
+.co_artist_avatar{
+    width: 180px;
+    height: 180px;
+    margin-left:100px;
+    margin-top:66px;
+}
+.co_pause{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #7AD940;
+    opacity: 0.56;
+    top:196px;
+    left:230px;
+}
+
+.co_pause_line{
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    top:206px;
+    left:242px;
+}
+
+.head{
+    display: flex;
+}
+
+.co_title {
+    font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+    margin-left:40px;
+    margin-top:55px;
+}
+.co_disc{
+    font-size: 12px;
+    line-height: 17px;
+    color: #ADADAD;
+    margin-left: 40px;
+    margin-top:5px;
+}
+
+.co_share{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 696px;
+    top: 159px;
+}
+.co_dis_title{
+    display: unset;
+}
+
+
+.co_chooser{
+    display: flex;
+    align-items: center;
+    margin-top:30px;
+    margin-left:100px;
+
+}
+
+.co_songs_lists{
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+}
+.co_subject_lists{
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.4;
+    margin-left:30px;
+}
+
+.co_line{
+    width: 586px;
+    height: 1px;
+    margin-top:10px;
+    background: #EAEAEA;
+    margin-left:100px;
+    margin-buttom:30px;
+}
+
+.co_song-lists{
+    margin-top:18px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+
+}
+
+.co_song_item{
+    margin-top:18px;
+    display: flex;
+    align-items: center;
+}
+
+.co_song_item img{
+    width: 20px;
+    height: 20px;
+    margin-right:10px;
+}
+
+.co_realted_sub{
+    margin-left:100px;
+    display: none;
+}
+
+.co_sub_avatar{
+    width: 70px;
+    height: 70px;
+}
+
+.co_asub{
+    display: flex;
+    margin-top:30px;
+}
+
+.co_sub_dis{
+    display: unset;
+    margin-left:30px;
+}
+
+.co_sub_title{
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.co_sub_sta{
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.3;
+    margin-top:2px;
+}
+
+.co_sub_time{
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.3;
+    margin-top:14px;
+}
+
+.co_detail_container{
+    margin-left: 100px;
+}
+
+
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{css/player.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{css/layout.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{css/layout2.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{css/share/index_share.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{css/share.css}" rel="stylesheet" type="text/css" />
+    <title>布局</title>
+
+
+
+</head>
+
+<body>
+    <div class="playerr" th:replace="player::player"></div>
+    <div class="co_qrc_con">
+        <div th:replace="share::share"></div>
+    </div>
+    <div class="buttom" th:replace="layout::buttom"></div>
+    <script src="/js/qrcode-min.js"></script>
+    <script src="/js/qrc_spawn.js"></script>
+    <script src="/js/share_btn.js"></script>
+</body>
+
+</html>

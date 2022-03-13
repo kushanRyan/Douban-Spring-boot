@@ -1,0 +1,105 @@
+ul{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+    display:flex;
+    align-items:center;
+}
+
+li{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    width: 1440px;
+    height: 1024px;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+}
+
+.ex_topbar{
+    margin-top:40px;
+    display:flex;
+    align-items:center;
+}
+.ex_mhz{
+    font-size: 12px;
+    line-height: 17px;
+    color: #2F9842;
+}
+.ex_songList{
+    font-size: 12px;
+    line-height: 17px;
+
+}
+.ex_like{
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.ex_mhz_img{
+    margin-left:598px;
+    width: 24px;
+    height: 24px;
+}
+
+.ex_songList_img{
+    margin-left:50px;
+    width: 17px;
+    height: 17px;
+}
+
+.ex_like_img{
+    margin-left:50px;
+    width: 16px;
+    height: 13.98px;
+}
+
+.sub_subjects{
+    margin-left:199px;
+    margin-top:60px;
+}
+.sub_aSubject{
+    width:150px;
+    height:335px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.subject_icon{
+    width: 150px;
+    height: 150px;
+}
+
+.asub_title{
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-top:20px;
+}
+
+.asub_creator{
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.4;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.asub_songNames{
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.4;
+    margin-top:4px;
+}
+
+.sub_aSubject{
+    margin-left:73px;
+}
+
+.sub_subjects>.sub_aSubject:first-child{
+    margin-left:0px;
+}

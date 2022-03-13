@@ -1,0 +1,144 @@
+ul{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+    display:flex;
+    align-items:center;
+}
+
+li{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    width: 1440px;
+    height: 1024px;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+}
+
+.ex_topbar{
+    margin-top:40px;
+    display:flex;
+    align-items:center;
+}
+.ex_mhz{
+    font-size: 12px;
+    line-height: 17px;
+    color: #2F9842;
+}
+.ex_songList{
+    font-size: 12px;
+    line-height: 17px;
+
+}
+.ex_like{
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.ex_mhz_img{
+    margin-left:598px;
+    width: 24px;
+    height: 24px;
+}
+
+.ex_songList_img{
+    margin-left:50px;
+    width: 17px;
+    height: 17px;
+}
+
+.ex_like_img{
+    margin-left:50px;
+    width: 16px;
+    height: 14px;
+}
+
+.my_heart{
+    font-size: 12px;
+    line-height: 17px;
+    color: #2F9842;
+    margin-left:696px;
+    margin-top:40px;
+}
+
+.play_heart{
+    display:flex;
+    align-items:center;
+    margin-left:370px;
+    margin-top:49px;
+    position: relative;
+}
+.fav_aline{
+    width: 700px;
+    height: 1px;
+    background: #EAEAEA;
+    margin-left:370px;
+    margin-top:25px;
+    margin-bottom:24px;
+}
+
+
+.fav_play{
+    width: 42px;
+    height: 42px;
+    background: #FF2C56;
+    border-radius: 50%;
+}
+
+.fav_heart_num{
+    font-size: 12px;
+    line-height: 17px;
+    color: #9C9C9C;
+    margin-left: 20px;
+}
+
+.aheart{
+    margin-top:19px;
+    margin-left:341px;
+    display:flex;
+    align-items:center;
+}
+.fav_heart_list_num{
+    font-size: 12px;
+    line-height: 17px;
+    color: #666666;
+}
+.fav_heart_icon{
+    width: 40px;
+    height: 40px;
+    background: #C4C4C4;
+    margin-left:20px;
+}
+
+.fav_heart_dis{
+    display: unset;
+    margin-left:10px;
+}
+.fav_dis{
+    font-size: 14px;
+    line-height: 20px;
+    color: #212121;
+}
+
+.fav_dis_text{
+    font-size: 12px;
+    line-height: 17px;
+    color: #666666;
+    margin-top:5px;
+}
+.fav_play_imgs{
+    position: absolute;
+    width: 16px;
+    height: 24px;
+    left:13px;
+    top:9px;
+}
+
+
+.bottom_100px{
+    margin-bottom:100px;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" th:href="@{css/mhzdetail.css}" type="text/css" />
+    <link rel="stylesheet" th:href="@{css/layout2.css}" type="text/css" />
+    <link rel="stylesheet" th:href="@{css/share.css}" type="text/css" />
+    <link rel="stylesheet" th:href="@{css/share/mhzdetail_share.css}" type="text/css" />
+</head>
+
+<body>
+    <div class="top" th:replace="layout2::top"></div>
+    <div class="detail_containers" th:fragment="content">
+        <div class="detail_container">
+            <div class="artist_info">
+                <img class="de_artist_img" th:src="${'../pics/artist_test.png'}">
+                <div class="de_artist_name" th:text="${subject.name}">田所浩二</div>
+                <div class="de_artist_sub">喜欢 114514</div>
+            </div>
+
+            <div class="the_share_bottom" id="share_btn">
+                 <img class="the_share_bottom_icon" th:src="${'../pics/share.png'}">
+                 <div class="the_share_bottom_text">分享</div>
+            </div>
+
+            <div class="de_songList">
+                <div class="de_aline line1"></div>
+                <div class="de_playAllsong">
+                    <img class="de_song_play" th:src="${'../pics/play_gray.png'}">
+                    <div class="de_player_text">全部精选歌曲</div>
+                </div>
+                <div class="de_list_asong">
+                    <img class="de_list_asong_img" th:src="${'../pics/artist_test.png'}">
+                    <div class="de_list_asong_text">1.野兽先辈目力咆哮</div>
+                </div>
+                <div class="de_list_asong">
+                    <img class="de_list_asong_img" th:src="${'../pics/artist_test.png'}">
+                    <div class="de_list_asong_text">1.野兽先辈目力咆哮</div>
+                </div>
+                <div class="de_list_asong">
+                    <img class="de_list_asong_img" th:src="${'../pics/artist_test.png'}">
+                    <div class="de_list_asong_text">1.野兽先辈目力咆哮</div>
+                </div>
+                <div class="de_list_asong">
+                    <img class="de_list_asong_img" th:src="${'../pics/artist_test.png'}">
+                    <div class="de_list_asong_text">1.野兽先辈目力咆哮</div>
+                </div>
+                <div class="de_list_asong">
+                    <img class="de_list_asong_img" th:src="${'../pics/artist_test.png'}">
+                    <div class="de_list_asong_text">1.野兽先辈目力咆哮</div>
+                </div>
+
+                <div class="de_list_watch_all">查看全部精选歌曲</div>
+            </div>
+            <div class="de_aline"></div>
+            <div class="de_related_list">
+                <div class="de_playAllsong">
+                    <img class="de_song_play" th:src="${'../pics/play_gray.png'}">
+                    <div class="de_player_text">野兽先辈 系</div>
+                </div>
+                <div class="de_related_text">该兆赫可能包含以下相似艺术家的歌曲</div>
+                <div class="de_artist_lists">
+                    <ul class="de_artist_alist">
+                        <li class="de_list1">
+                            <div class="de_aArtist">
+                                <img class="de_artist_lists_artist" th:src="${'../pics/artist_test.png'}">
+                                <div class="de_artist_lists_text">田所浩二</div>
+                            </div>
+                        </li>
+                        <li class="de_list1">
+                            <div class="de_aArtist">
+                                <img class="de_artist_lists_artist" th:src="${'../pics/artist_test.png'}">
+                                <div class="de_artist_lists_text">田所浩二</div>
+                            </div>
+                        </li>
+                        <li class="de_list1">
+                            <div class="de_aArtist">
+                                <img class="de_artist_lists_artist" th:src="${'../pics/artist_test.png'}">
+                                <div class="de_artist_lists_text">田所浩二</div>
+                            </div>
+                        </li>
+                        <li class="de_list1">
+                            <div class="de_aArtist">
+                                <img class="de_artist_lists_artist" th:src="${'../pics/artist_test.png'}">
+                                <div class="de_artist_lists_text">田所浩二</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="de_artist_alist list2">
+                        <li class="de_list1">
+                            <div class="de_aArtist">
+                                <img class="de_artist_lists_artist" th:src="${'../pics/artist_test.png'}">
+                                <div class="de_artist_lists_text">田所浩二</div>
+                            </div>
+                        </li>
+                        <li class="de_list1">
+                            <div class="de_aArtist">
+                                <img class="de_artist_lists_artist" th:src="${'../pics/artist_test.png'}">
+                                <div class="de_artist_lists_text">田所浩二</div>
+                            </div>
+                        </li>
+                        <li class="de_list1">
+                            <div class="de_aArtist">
+                                <img class="de_artist_lists_artist" th:src="${'../pics/artist_test.png'}">
+                                <div class="de_artist_lists_text">田所浩二</div>
+                            </div>
+                        </li>
+                        <li class="de_list1">
+                            <div class="de_aArtist">
+                                <img class="de_artist_lists_artist" th:src="${'../pics/artist_test.png'}">
+                                <div class="de_artist_lists_text">田所浩二</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="co_qrc_con">
+        <div th:replace="share::share"></div>
+    </div>
+    <script src="/js/qrcode-min.js"></script>
+    <script src="/js/qrc_spawn.js"></script>
+    <script src="/js/share_btn.js"></script>
+
+</body>
+
+</html>

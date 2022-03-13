@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布局</title>
+    <link th:href="@{css/share.css}" rel="stylesheet" type="text/css" />
+</head>
+
+<div class="sharer" th:fragment="share">
+    <div class="share_container">
+        <div class="sha_artist_info">
+            <img class="artist_icon" th:src="${'/pics/artist_test.png'}">
+            <div class="sha_discp">
+                <div class="sha_title">你是先辈</div>
+                <div class="sha_disc">单曲</div>
+            </div>
+        </div>
+        <div class="qrc" id="qrcode"></div>
+        <div class="wexin_share">扫描分享到微信</div>
+        <div class="share_wasToshare">
+            <img class="icon weixin_share" th:src="${'/pics/douban_share.png'}">
+            <img class="icon web_share" th:src="${'/pics/xin_sahre.png'}">
+            <img class="icon qq_share" th:src="${'/pics/qq_share.png'}">
+            <img class="icon other_share" th:src="${'/pics/normal_share.png'}">
+        </div>
+    </div>
+</div>
+
+<script src="/js/qrcode-min.js"></script>
+<script src="/js/qrc_spawn.js"></script>
+
+</html>
+
+<!--<script th:src="${'/js/qrc_spawn.js'}" type="text/javascript"></script>-->
+<!--<script th:src="${'/js/qrcode-min.js'}"  type="text/javascript"></script>-->

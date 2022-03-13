@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布局</title>
+    <link href="layout2.css" rel="stylesheet">
+</head>
+<div th:fragment="top" class="top_top">
+    <div class="top_top_player">
+        <img class="top_logo" th:src="${'../pics/doubanIcon.png'}">
+        <div class="top_thePlayer">
+            <div class="top_songName" >我不完美</div>
+
+            <div class="top_bar"></div>
+            <div class="top_buttom">
+                <div class="top_theplayer_mhz">
+                    <div class="top_Mhzer">李玖哲 MHz</div>
+                    <img class="top_changer" th:src="${'../pics/topbar_change.png'}">
+                </div>
+                <div class="top_player_time">-03:34</div>
+                <img class="top_player_sound" th:src="${'../pics/songouter.png'}">
+
+            </div>
+        </div>
+        <div class="top_chooser">
+            <img class="top_like" th:src="${'../pics/like.png'}">
+            <img class="top_delete" th:src="${'../pics/delete.png'}">
+            <img class="top_randomPlay" th:src="${'../pics/randomPlay.png'}">
+            <img class="top_list" th:src="${'../pics/list.png'}">
+            <img class="top_nextleft" th:src="${'../pics/nextleft.png'}">
+            <img class="top_play" th:src="${'../pics/play.png'}">
+            <img class="top_nextRight" th:src="${'../pics/nextRight.png'}">
+        </div>
+
+        <div class="top_sign_login">登录 I 注册</div>
+        <img class="top_up" th:src="${'../pics/upCycle.png'}">
+
+    </div>
+</div>
+
+</html>

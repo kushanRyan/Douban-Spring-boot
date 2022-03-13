@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布局</title>
+    <link th:href="@{css/layout.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{css/layout2.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{css/my.css}" rel="stylesheet" type="text/css" />
+</head>
+    <div class="top" th:replace="layout2::top"></div>
+    <div class="favorite_list">
+        <div class="ex_topbar">
+            <img class="ex_mhz_img" th:src="${'pics/radio.png'}">
+            <div class="ex_mhz_text">兆赫</div>
+
+            <img class="ex_songList_img" th:src="${'pics/songList.png'}">
+            <div class="ex_songList_text">歌单</div>
+
+            <img class="ex_like_img" th:src="${'pics/like_icon.png'}">
+            <div class="ex_like_text">我的</div>
+        </div>
+        <div class="my_heart">我的红心</div>
+        <div class="play_heart">
+            <div class="fav_play" ></div>
+            <div class="fav_heart_num">2首红心歌曲</div>
+            <img class="fav_play_imgs" th:src="${'pics/big_play_img'}">
+        </div>
+        <div class="fav_aline"></div>
+        <div class="fav_heart_list" >
+            <div class="aheart" th:each="asong,it:${songs}">
+                <div class="fav_heart_list_num" th:text="${it.count}">1</div>
+                <img class="fav_heart_icon" th:src="${asong.cover}" >
+                <div class="fav_heart_dis">
+                    <div class="fav_dis" th:src="${asong.name}">雷普 Strike</div>
+                    <div class="fav_dis_text" th:src="${asong.lyrics}">Rape Of The YajuSenpai  1919</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_100px"></div>
+    <div class="buttom" th:replace="layout::buttom"></div>
+</html>

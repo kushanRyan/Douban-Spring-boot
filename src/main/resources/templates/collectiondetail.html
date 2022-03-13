@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{css/layout2.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{css/collectiondetail.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{css/share.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{css/share/collectiondetail_share.css}" rel="stylesheet" type="text/css" />
+    <title>布局</title>
+
+</head>
+<body>
+    <div class="top" th:replace="layout2::top"></div>
+    <div class="co_artist_container">
+        <div class="head">
+            <img class="co_artist_avatar" th:src="${subject.cover}" >
+            <div class="co_pause"></div>
+            <img class="co_pause_line" th:src="${'../pics/pause_line.png'}">
+            <div class="co_dis_title">
+                <div class="co_title" th:text="${subject.name}">田所浩二  的豪俊金曲</div>
+                <div class="co_disc" th:text="${subject.name}+'创建50首歌曲 1919-08-10'">田所浩二创建50首歌曲 1919-08-10</div>
+            </div>
+        </div>
+        <img class="co_share" id="share_btn" th:src="${'../pics/share.png'}">
+        <div class="co_chooser">
+            <div class="co_songs_lists">歌曲列表(50)</div>
+            <div class="co_subject_lists">豆瓣FM的其他歌单(3)</div>
+        </div>
+        <div class="co_share-icon"></div>
+        <div class="co_line"></div>
+
+        <div class="co_detail_container">
+            <div class="co_select-song" >
+                <ul class="co_song-lists" th:each="aSong,it:${songs}">
+                    <li class="co_song_item">
+                        <img th:src="${aSong.cover}" /><span th:text="${aSong.name}">1.千年泪</span>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="co_realted_sub" th:each="otherSub,it:${otherSubjects}">
+                <li class="co_asub">
+                    <img class="co_sub_avatar" th:src="${otherSub.cover}" >
+                    <div class="co_sub_dis">
+                        <div class="co_sub_title" th:text="${otherSub.name}">理想主义专属歌单</div>
+                        <div class="co_sub_sta">30首歌  114514收藏</div>
+                        <div class="co_sub_time" th:text="${otherSub.gmtModified}+'更新'">2019-08-10 11:45:14更新</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+    <div class="co_qrc_con">
+        <div th:replace="share::share"></div>
+    </div>
+
+    <script th:src="${'js/collectiondetail.js'}" type="text/javascript"></script>
+    <script src="/js/qrcode-min.js"></script>
+    <script src="/js/qrc_spawn.js"></script>
+    <script src="/js/share_btn.js"></script>
+</body>
+</html>

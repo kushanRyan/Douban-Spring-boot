@@ -1,0 +1,143 @@
+.top_top{
+    padding:0px;
+    margin:0px;
+}
+
+
+.top_top_player{
+    width:1440px;
+    height:92px;
+    display:flex;
+}
+
+.top_logo{
+    width: 80px;
+    height: 32px;
+    margin-top:32px;
+    margin-left:200px;
+}
+.top_thePlayer{
+    margin-top:22px;
+    margin-left:75px;
+}
+
+.top_songName{
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.top_bar{
+    margin-top:4px;
+    width: 390px;
+    height: 2px;
+    background: #E9E9E9;
+}
+
+.top_buttom{
+    display:flex;
+}
+
+.top_Mhzer{
+    margin-top:6px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #2F9842;
+}
+
+.top_changer{
+    width: 8px;
+    height: 15px;
+    margin-left:6px;
+    margin-top:8px;
+}
+
+.top_theplayer_mhz{
+    display:flex;
+}
+
+.top_player_time{
+    margin-top:2px;
+    margin-left:253px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #7E7E7E;
+
+}
+.top_player_sound{
+    width: 12px;
+    height: 10px;
+    margin-top:4px;
+    margin-left:10px;
+}
+
+.top_chooser{
+    display:flex;
+    align-items:center;
+    margin-top:35px;
+    height:24px;
+}
+
+.top_like{
+    width: 20px;
+    height: 19.33px;
+    margin-left:50px;
+}
+.top_delete{
+    width: 18px;
+    height: 20.88px;
+    margin-left:25px;
+}
+
+.top_randomPlay{
+    margin-left:49px;
+    width: 14px;
+    height: 12px;
+}
+
+.top_nextleft{
+    margin-left:15px;
+    width: 18px;
+    height: 20.16px;
+
+}
+
+.top_play{
+    margin-left:25.4px;
+    width: 17.6px;
+    height: 24px;
+}
+
+.top_nextRight{
+    margin-left:25px;
+    width: 18px;
+    height: 20.16px;
+}
+
+.top_list{
+    margin-left:15px;
+    width: 14px;
+    height: 10px;
+
+}
+
+.top_sign_login
+{
+    color: #B3B3B3;
+    margin-top:38px;
+    margin-left:72px;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.top_up{
+    width: 20px;
+    height: 20.08px;
+    margin-top:36px;
+    margin-left:20px;
+}

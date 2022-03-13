@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" th:href="@{css/collection.css}" type="text/css" />
+    <link th:href="@{css/layout2.css}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="top" th:replace="layout2::top"></div>
+
+    <div class="subject_container"th:fragment="subject_container">
+        <div class="ex_topbar">
+            <img class="ex_mhz_img" th:src="${'pics/radio.png'}">
+            <div class="ex_mhz_text">兆赫</div>
+
+            <img class="ex_songList_img" th:src="${'pics/songList.png'}">
+            <div class="ex_songList_text">歌单</div>
+
+            <img class="ex_like_img" th:src="${'pics/like_icon.png'}">
+            <div class="ex_like_text">我的</div>
+        </div>
+        <ul class="sub_subjects">
+            <li class="sub_aSubject" th:each="subjects,it:${subjectInfo}" th:if="${it.count}<=5">
+                <img class="subject_icon" th:src="${subjects.avatar}">
+                <div class="asub_title" th:text="${subjects.name}">救世啊,sodayo!</div>
+                <div class="asub_creator" th:text="${subjects.master}">雷普乐团 创建</div>
+                <div th:each="names,it:${subjects.songNames}" >
+                    <div class="asub_songNames" th:text="${names}">噔 噔 咚(攻击战)</div>
+                </div>
+                <div class="asub_songNames">曲目 4  收藏 65</div>
+            </li>
+        </ul>
+        <ul class="sub_subjects">
+            <li class="sub_aSubject" th:each="subjects,it:${subjectInfo}" th:if="${it.count}>=6 and ${it.count}<=10">
+                <img class="subject_icon" th:src="${subjects.avatar}">
+                <div class="asub_title" th:text="${subjects.name}">救世啊,sodayo!</div>
+                <div class="asub_creator" th:text="${subjects.master}">雷普乐团 创建</div>
+                <div th:each="names,it:${subjects.songNames}" >
+                    <div class="asub_songNames" th:text="${names}">噔 噔 咚(攻击战)</div>
+                </div>
+                <div class="asub_songNames">曲目 4  收藏 65</div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

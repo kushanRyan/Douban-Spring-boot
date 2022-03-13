@@ -1,0 +1,30 @@
+        .first1{
+            font-family: PingFang SC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 17px;
+            color:#A3A3A3;
+            margin-left:401px;
+        }
+
+        .first2{
+            font-family: PingFang SC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 17px;
+            color: #A3A3A3;
+            margin-left:538px;
+            margin-top:20px;
+        }
+        .second{
+            font-family: PingFang SC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 17px;
+            color: #262626;
+            margin-left:507px;
+            margin-top:20px;
+        }

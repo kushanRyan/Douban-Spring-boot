@@ -1,0 +1,240 @@
+.explore{
+    height:1520px;
+    weight:1440px;
+}
+
+ul{
+    list-style: none;
+    padding:0px;
+}
+
+li{
+    padding:0px;
+}
+.ex_topbar{
+    margin-top:40px;
+    display:flex;
+    align-items:center;
+}
+.ex_mhz{
+    font-size: 12px;
+    line-height: 17px;
+    color: #2F9842;
+}
+.ex_songList{
+    font-size: 12px;
+    line-height: 17px;
+
+}
+.ex_like{
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.ex_mhz_img{
+    margin-left:598px;
+    width: 24px;
+    height: 24px;
+}
+
+.ex_songList_img{
+    margin-left:50px;
+    width: 17px;
+    height: 17px;
+}
+
+.ex_like_img{
+    margin-left:50px;
+    width: 16px;
+    height: 13.98px;
+}
+
+.ex_mhzs{
+    display:flex;
+    align-items:center;
+    margin-top:43px;
+}
+
+
+.ex_mhzs_img{
+    width: 40px;
+    height: 40px;
+}
+
+.own_mhz{
+    margin-left:200px;
+    display:flex;
+    align-items:center;
+}
+.good_mhz{
+    margin-left:120px;
+    display:flex;
+    align-items:center;
+}
+
+.ex_mhzs_title{
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.ex_mhzs_dis{
+    font-size: 12px;
+    line-height: 17px;
+    color: #BCBBBB;
+}
+
+.artist_title{
+    margin-left:200px;
+    margin-top:50px;
+    display:flex;
+    align-items:center;
+}
+
+.ex_artist_title_text{
+    font-size: 14px;
+    line-height: 20px;
+    color: #A6A6A6;
+}
+
+.ex_artist_title_img{
+    margin-left:10px;
+    width: 15px;
+    height: 17px;
+}
+
+.artist_container{
+    padding:0px;
+    width:1040px;
+    height:561px;
+    margin-left:200px;
+    margin-top:50px;
+}
+
+.artist_contain1>.artist_aArtist:first-child{
+    margin-left:0px;
+}
+
+.artist_contain2>.artist_aArtist:first-child{
+    margin-left:0px;
+}
+
+.artist_aArtist{
+    margin-left:64px;
+    width: 155px;
+    height: 17px;
+}
+
+.artist_artPic{
+    margin-left:18px;
+    width: 120px;
+    height: 120px;
+    border-radius:50%;
+}
+
+.artist_system{
+    margin-top:20px;
+    text-align:center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.artist_dis{
+    test-align:center;
+    margin-top:10px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #B0B0B0;
+}
+
+.artist_contain1{
+    padding:0px;
+    display:flex;
+    align-items:center;
+}
+
+.artist_contain2{
+    padding:0px;
+    display:flex;
+    align-items:center;
+}
+
+.artist_aline{
+    width: 1040px;
+    height: 1px;
+    background: #EFEFEF;
+}
+.artist_more{
+    width: 110px;
+    height: 25px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #E0E0E0;
+    font-size: 12px;
+    line-height: 17px;
+    color: #AEAEAE;
+    margin-left:465px;
+    margin-top:40px;
+    padding-top:4px;
+    padding-left:19px;
+}
+
+.aline1{
+    margin-top:227px;
+}
+
+.aline2{
+    margin-top:227px;
+}
+
+
+.containers{
+    margin-left:200px;
+    margin-top:40px;
+}
+
+
+.contain_title{
+    font-size: 12px;
+    line-height: 17px;
+    color: #A6A6A6;
+}
+
+.aMhz_list{
+    padding:0px;
+    display:flex;
+    align-items:center;
+    width:1040px;
+}
+
+.aMhz_mod{
+    margin-top:20px;
+    padding:0px;
+    display:flex;
+    align-items:center;
+    margin-left:48px;
+}
+.aMhz_con{
+    font-size: 14px;
+    line-height: 14px;
+    color: #1C1C1C;
+}
+
+.aMhz_text{
+    font-size: 12px;
+    line-height: 12px;
+    color: #A5A5A5;
+    margin-left:6px;
+}
+
+.artist_bottom_line{
+    width: 208px;
+    height: 1px;
+    background: #EFEFEF;
+    margin-top:20px;
+}
+
+
+.aMhz_list>.aMhz_alist:first-child>.aMhz_mod{
+    margin-left:70px;
+}

@@ -1,0 +1,149 @@
+ul{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+    display:flex;
+    align-items:center;
+}
+
+li{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    width: 1440px;
+    height: 1024px;
+    background-color:gray;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+}
+
+.sign_container{
+    width: 1040px;
+    height: 831px;
+    background: #FBFBFB;
+    margin-left:200px;
+    margin-top:97px;
+    overflow:hidden;
+    position: relative;
+}
+
+.sign_return{
+    display: flex;
+    align-items: center;
+    margin-top:30px;
+    margin-left:30px;
+}
+
+.sign_arrow{
+    width: 13px;
+    height: 13px;
+}
+
+.sign_arrow_text{
+    font-size: 12px;
+    line-height: 17px;
+    margin-left:5px;
+    color: #767676;
+}
+.sign-form{
+    width: 310px;
+    height: 190px;
+    margin-left:365px;
+    margin-top:238px;
+}
+.sign_login{
+    height:46px;
+    width:316px;
+    display: flex;
+    align-items: center;
+}
+
+.sign_signer{
+    width:158px;
+    border-bottom: 2px solid #1C1C1C;
+    text-align: center;
+    font-size: 18px;
+    line-height: 44px;
+    color: #000000;
+}
+.login_loginer{
+
+    width:158px;
+    border-bottom: 1px solid #E2E2E2;
+    text-align: center;
+    font-size: 18px;
+    line-height: 44px;
+    color: #000000;
+    opacity: 0.4;
+}
+
+.sign_con{
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    box-sizing: border-box;
+    width: 310px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #8D8D8D;
+    padding-left:15px;
+}
+
+.con1{
+    margin-top:39px;
+    outline:none;
+}
+
+.con2{
+    margin-top:10px;
+    outline:none;
+}
+.enter-btn{
+    width: 310px;
+    height: 40px;
+    background: #A8DEB0;
+    font-size: 16px;
+    line-height: 40px;
+    color: #FFFFFF;
+    border: 0px solid #E2E2E2;
+    margin-top:20px;
+    outline:none;
+
+}
+
+.refind_code{
+    position: absolute;
+    border-style:none;
+    background: #FBFBFB;
+    font-size: 12px;
+    line-height: 36px;
+    color: #ADADAD;
+    height:36px;
+    left:612px;
+    top:422px;
+    outline:none;
+}
+
+.auto_login{
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    box-sizing: border-box;
+}
+
+.auto_login_con{
+    margin-top:9px;
+    display: flex;
+    align-items: center;
+}
+
+.auto_login_text{
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布局</title>
+    <link th:href="@{css/userguide.css}" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+<div class="artist_container">
+    <div class="ac_sign">
+        <div class="ac_sign_text">已有账号登陆</div>
+        <img class="ac_sign_pic" th:src="${'../pics/left_arrow.png'}">
+    </div>
+
+    <div class="the_title">挑选你喜欢的艺术家，开启私人音乐之旅</div>
+
+    <ul class="con_artist_list" >
+        <li class="con_artist1" th:each="asinger,it:${singers}" th:if="${it.count}<=5">
+            <img th:classappend="'con_artist_img'+' '" th:id="${it.count}+'a'" th:src="${asinger.avatar}" th:if="${it.count}<=5">
+            <div th:classappend="'con_artist_name'+' '" th:id="${it.count}+'b'"  th:text="${asinger.name}" th:if="${it.count}<=5">野兽先辈</div>
+            <button class="con_artist_like">喜欢</button>
+        <li>
+    </ul>
+<!--    con_artist_img con_artist_name-->
+    <ul class="con_artist_list">
+        <li class="con_artist2" th:each="asinger,it:${singers}" th:if="${it.count}>5 and ${it.count}<11">
+            <img th:classappend="'con_artist_img'+' '" th:id="${it.count}+'a'" th:src="${asinger.avatar}" th:if="${it.count}>5 and ${it.count}<11">
+            <div th:classappend="'con_artist_name'+' '" th:id="${it.count}+'b'" th:text="${asinger.name}" th:if="${it.count}>5 and ${it.count}<11">野兽先辈</div>
+            <button class="con_artist_like">喜欢</button>
+        <li>
+    </ul>
+
+    <div class="changer_searcher">
+        <div class="changer_box">
+            <img class="changer_box_img" th:src="${'../pics/artist_change.png'}">
+            <div class="changer_text">换一批</div>
+        </div>
+        <div class="searcher_box">
+            <img class="searcher_box_img" th:src="${'../pics/search.png'}">
+            <div class="searcher_text">自己搜</div>
+        </div>
+    </div>
+
+
+
+    <ul class="choosed_artist_list">
+        <img class="choosed_artist" th:src="${'../pics/unknown_man.png'}">
+        <img class="choosed_artist" th:src="${'../pics/unknown_man.png'}">
+        <img class="choosed_artist" th:src="${'../pics/unknown_man.png'}">
+        <img class="choosed_artist" th:src="${'../pics/unknown_man.png'}">
+        <img class="choosed_artist" th:src="${'../pics/unknown_man.png'}">
+    </ul>
+
+    <div class="choose_skip">
+        跳过，直接去听歌
+        <img class="choose_arrow" th:src="${'../pics/left_gray_arrow.png'}">
+    </div>
+</div>
+
+<script th:src="${'js/user-guide.js'}" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布局</title>
+    <link rel="stylesheet" href="explore.css">
+</head>
+<div th:fragment="explore" class="explore">
+    <div class="ex_topbar">
+        <img class="ex_mhz_img" th:src="${'pics/radio.png'}">
+        <div class="ex_mhz_text">兆赫</div>
+
+        <img class="ex_songList_img" th:src="${'pics/songList.png'}">
+        <div class="ex_songList_text">歌单</div>
+
+        <img class="ex_like_img" th:src="${'pics/like_icon.png'}">
+        <div class="ex_like_text">我的</div>
+    </div>
+
+    <div class="ex_mhzs">
+        <div class="own_mhz">
+            <img class="ex_mhzs_img" th:src="${'pics/own_mhzs.png'}">
+            <div class="ex_dis">
+                <div class="ex_mhzs_title">我的私人兆赫</div>
+                <div class="ex_mhzs_dis">豆瓣FM会根据你的喜好来推荐歌曲，让你与喜欢的音乐不期而遇</div>
+            </div>
+        </div>
+        <div class="good_mhz">
+            <img class="ex_mhzs_img" th:src="${'pics/good_mhzs.png'}">
+            <div class="ex_dis">
+                <div class="ex_mhzs_title">豆瓣精选兆赫</div>
+                <div class="ex_mhzs_dis">汇聚各种音乐风格的精选兆赫，从这里开始音乐漫游吧</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ex_artist">
+        <div class="artist_title">
+            <div class="ex_artist_title_text">从艺术家出发</div>
+            <img class="ex_artist_title_img" th:src="${'pics/mirco_phone.png'}">
+        </div>
+
+        <div class="artist_container">
+            <ul class="artist_contain1" >
+                <li class="artist_aArtist" th:each="artist,it:${artistDatas}" th:if="${it.count}<6?'true':'false'">
+                    <img class="artist_artPic" th:src="${artist.cover}" th:if="${it.count}<6?'true':'false'">
+                    <div class="artist_system" th:text="${artist.name}" th:if="${it.count}<6?'true':'false'"></div>
+                    <div class="artist_dis" th:text="${artist.name}+'及其相似的艺术家们'" th:if="${it.count}<6"></div>
+                </li>
+            </ul>
+            <div class="artist_aline aline1"></div>
+
+            <ul class="artist_contain2" >
+                <li class="artist_aArtist" th:each="artist,it:${artistDatas}" th:if="${it.count}>5 and ${it.count}<11">
+
+                    <img class="artist_artPic" th:src="${artist.cover}" th:if="${it.count}<11">
+                    <div class="artist_system" th:text="${artist.name}" th:if="${it.count}<11"></div>
+                    <div class="artist_dis" th:text="${artist.name}+'及其相似的艺术家们'" th:if="${it.count}<11"></div>
+                </li>
+            </ul>
+
+            <div class="artist_aline aline2"></div>
+
+
+            <div class="artist_more">加载更多兆赫</div>
+        </div>
+
+
+
+        <div class="containers">
+            <div class="mood_container" th:each="threeList,it:${mhzViewModels}">
+                <div class="contain_title" th:if="${it.count}==3">心情 / 场景</div>
+                <div class="contain_title" th:if="${it.count}==2">语言 / 年代</div>
+                <div class="contain_title" th:if="${it.count}==1">风格 / 流派</div>
+                <div class="artist_aline aline3"></div>
+
+                <ul class="aMhz_list" th:each="oneList:${threeList}" >
+                    <li class="aMhz_alist" th:each="theList,it:${oneList.subjects}" th:if="${it.count}<=5">
+                        <div class="aMhz_mod">
+                            <div class="aMhz_con" th:text="${theList.name}">工作学习</div>
+                            <div class="aMhz_text">MHz</div>
+                        </div>
+                        <div class="artist_bottom_line" ></div>
+                    </li>
+                </ul>
+
+                <div></div>
+
+                <ul class="aMhz_list" th:each="oneList:${threeList}" >
+                    <li class="aMhz_alist" th:each="theList,it:${oneList.subjects}" th:if="${it.count}>=6 and ${it.count}<=10">
+                        <div class="aMhz_mod">
+                            <div class="aMhz_con" th:text="${theList.name}">工作学习</div>
+                            <div class="aMhz_text">MHz</div>
+                        </div>
+                        <div class="artist_bottom_line" ></div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+<!--    border: 1px solid #E0E0E0;-->
+</div>
+
+</html>

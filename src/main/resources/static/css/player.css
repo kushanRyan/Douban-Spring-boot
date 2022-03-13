@@ -1,0 +1,319 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+
+.container{
+    width:1440px;
+    height:900px;
+}
+
+
+.head{
+    margin-top:30px;
+    margin-left:200px;
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    width: 80px;
+    height: 32px;
+}
+
+.don_feed{
+    margin-left:40px;
+    font-family: PingFang SC;
+    font-size: 12px;
+    line-height: 17px;
+    color: #B3B3B3;
+}
+
+.sign_login{
+    margin-left:706px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #B3B3B3;
+}
+
+.center{
+    width:953px;
+    height:375px;
+
+    margin-left:243px;
+    margin-top:153px;
+}
+
+.MHZ{
+    margin-left:122px;
+    font-style: normal;
+    font-weight: normal;
+    display:flex;
+    align-items:center;
+}
+
+.MHZ_owner{
+      font-size: 16px;
+      line-height: 22px;
+      color: #2F9842;
+      margin-left:10px;
+      margin-right:15px;
+}
+.songLevel{
+    width:10px;
+    height:9px;
+
+}
+.change{
+    width:8px;
+    height:15px;
+
+}
+
+.tdc{
+    margin-top:56px;
+    width:78px;
+    height:112px;
+}
+
+
+.tdc_pic{
+    width: 78px;
+    height: 79px;
+
+}
+
+
+.tdc_txt{
+    width: 77px;
+    height: 28px;
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 14px;
+    color: #979797;
+    text-align: center;
+}
+
+.players{
+    display:flex;
+}
+
+.player{
+
+    width:502px;
+    height:338px;
+    margin-left:65px;
+    margin-top:60px;
+
+
+}
+.player_title{
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.player_author{
+    margin-top:10px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: #7E7E7E;
+}
+
+
+.player_control1{
+    margin-top:15px;
+    display:flex;
+    align-items:center;
+
+}
+
+.time{
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #7E7E7E;
+}
+
+.voice{
+    width: 12px;
+    height: 10px;
+    margin-left:10px;
+}
+.lyric{
+    margin-left:332px;
+    width:15px;
+    height:13px;
+}
+.downToPhone{
+    margin-left:33px;
+    width: 18px;
+    height: 15px;
+
+}
+.share{
+    margin-left:35px;
+    width: 12px;
+    height: 14px;
+}
+
+.player_proBar{
+    margin-top:4px;
+    width: 500px;
+    height: 2px;
+    background: #E9E9E9;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.player_control2{
+    display:flex;
+    align-items:center;
+    margin-top:60px;
+}
+
+.like{
+    width: 30px;
+    height: 29px;
+}
+.delete{
+    width: 25px;
+    height: 29px;
+    margin-left:40px;
+
+}
+
+.list{
+    margin-left:135px;
+    width: 14px;
+    height: 10px;
+
+}
+
+.randomPlay{
+    margin-left:20px;
+    width: 14px;
+    height: 12px;
+
+}
+
+.nextleft{
+    margin-left:30px;
+    width: 25px;
+    height: 28px;
+
+}
+
+.play{
+    margin-left:59.5px;
+    width: 22px;
+    height: 30px;
+
+}
+
+.nextRight{
+    margin-left:60.5px;
+    width: 25px;
+    height: 28px;
+
+}
+
+.player_sub{
+    width: 300px;
+    height: 30px;
+    background: #EDEDED;
+    margin-top:57px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.login_sign{
+    margin-left:10px;
+    color:#2F9842;
+}
+
+.cover{
+    border-radius: 50% ;
+    left:944px;
+    top:252px;
+    position: absolute;
+    width: 257.5px;
+    height: 257.5px;
+
+}
+
+.up{
+    position: absolute;
+    left:1220px;
+    top:704px;
+
+}
+
+
+
+.buttom{
+    background-color:#FFFFFF;
+    width:1440px;
+    height:67px;
+    margin-top:240px;
+    display:flex;
+    align-items:center;
+}
+
+
+
+.MHZ_but{
+    margin-left:646px;
+    display:flex;
+    align-items:center;
+    font-size: 12px;
+    line-height: 17px;
+    color: #2F9842
+}
+
+.bottom_list{
+    margin-left:50px;
+    display:flex;
+    align-items:center;
+    font-size: 12px;
+    line-height: 17px;
+    color: #979797;
+}
+
+.mhz_img{
+    width:24px;
+    height:24px;
+
+}
+
+.mhz_txt{
+    margin-left:2px;
+
+}
+.list_img{
+    width:17px;
+    height:17px;
+}
+.list_txt{
+    margin-left:7px;
+
+}
+
+
+
+
+
+
+
+
+

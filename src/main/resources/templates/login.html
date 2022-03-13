@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布局</title>
+    <link th:href="${'../css/login.css'}" rel="stylesheet" type="text/css" />
+</head>
+<div class="sign_container">
+    <div class="sign_return">
+        <img class="sign_arrow" th:src="${'../pics/leftGrayArrow.png'}" >
+        <div class="sign_arrow_text">返回</div>
+    </div>
+    <form class="sign-form" action="/app/authenticate" method="post" name="user">
+        <div class="input-content">
+            <div class="sign_login">
+                <div class="sign_signer">密码登陆</div>
+                <div class="login_loginer">注册</div>
+            </div>
+            <input class="sign_con con1" type="text" autocomplete="off" placeholder="用户名" name="name" required />
+            <input class="sign_con con2" type="password" autocomplete="off" placeholder="登录密码" name="password" required maxlength="32" />
+
+        </div>
+        <!--登入按钮-->
+        <button type="submit" class="enter-btn">登录豆瓣</button>
+        <div class="auto_login_con">
+            <label> <input type="checkbox" name="if_auto_login" class="auto_login" /></label>
+            <div class="auto_login_text">下次自动登录</div>
+        </div>
+    </form>
+
+    <button class="refind_code"></button>
+</div>
+
+</html>

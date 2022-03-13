@@ -1,0 +1,179 @@
+ul{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+
+li{
+    padding:0px;
+    margin:0px;
+}
+.detail_containers{
+    margin-top:76px;
+    position: relative;
+}
+
+
+.the_share_bottom{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    top:40px;
+    left:1019px;
+}
+.the_share_bottom_icon{
+    width: 12px;
+    height: 14px;
+}
+
+.the_share_bottom_text{
+    font-size: 14px;
+    line-height: 20px;
+    margin-left:10px;
+    color: #9A9A9A;
+}
+
+.detail_container{
+    width: 786px;
+    height: 1299px;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    margin-left:327px;
+}
+
+.de_artist_img{
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    margin-left:300px;
+    margin-top:50px;
+}
+
+.de_artist_name{
+    width: 200px;
+    height: 42px;
+    color: #000000;
+    margin-left:300px;
+    margin-top:30px;
+    text-align:center;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.de_artist_sub{
+    width: 76px;
+    height: 20px;
+    margin-top:20px;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    position: absolute;
+    font-size: 12px;
+    line-height: 20px;
+    color: #C5C5C5;
+    margin-left:362px;
+}
+
+
+.de_aline{
+    width: 586px;
+    height: 1px;
+    background: #EAEAEA;
+    margin-left:107px;
+    margin-top:40px;
+}
+
+.line1{
+    margin-top:80px;
+}
+.de_playAllsong{
+    display:flex;
+    align-items:center;
+    margin-left:107px;
+    margin-top:40px;
+}
+.de_song_play{
+    width:11px;
+    height:14px;
+
+}
+
+.de_player_text{
+    font-size: 12px;
+    line-height: 17px;
+    color: #2F9842;
+    margin-left:10px;
+
+}
+.de_list_asong{
+    margin-left:107px;
+    margin-top:19px;
+    display:flex;
+    align-items:center;
+}
+.de_list_asong_img{
+    width: 20px;
+    height: 20px;
+}
+
+.de_list_asong_text{
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    margin-left:10px;
+}
+
+.de_list_watch_all{
+    font-size: 12px;
+    line-height: 17px;
+    color: #AFAFAF;
+    margin-left:107px;
+    margin-top:20px;
+}
+.de_related_text{
+    font-size: 12px;
+    line-height: 17px;
+    color: #AFAFAF;
+    margin-left:107px;
+    margin-top:20px;
+
+}
+
+.de_artist_lists{
+    margin-top:76px;
+    margin-left:107px;
+
+}
+.de_aArtist{
+    width:100px;
+}
+
+.de_artist_alist{
+    display:flex;
+    align-items:center;
+}
+.de_artist_lists_artist{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+}
+
+.de_artist_lists_text{
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin-top:20px;
+    text-align:center;
+}
+
+.de_list1{
+    margin-left:57px;
+}
+
+.de_artist_alist>.de_list1:first-child{
+    margin-left:0px;
+}
+
+.list2{
+    margin-top:40px;
+}
+

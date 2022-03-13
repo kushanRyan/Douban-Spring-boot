@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="player" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布局</title>
+    <link href="@{/css/player.css}" rel="stylesheet" type="text/css" />
+</head>
+<div th:fragment="player" class="container">
+    <div class="head">
+        <img class="logo" th:src="${'../pics/doubanIcon.png'}">
+        <div class="don_feed">下载豆瓣FM APP · 我要反馈</div>
+        <div class="sign_login">登录 I 注册</div>
+    </div>
+
+    <div class="center">
+        <div class="MHZ">
+            <img class="songLevel" th:src="${'../pics/songLevel.png'}">
+            <div class="MHZ_owner">李玖哲 MHz</div>
+            <img class="change" th:src="${'../pics/change.png'}">
+        </div>
+        <div class="players">
+            <div class="tdc">
+                <img class="tdc_pic" th:src="${'../pics/tdc.png'}">
+                <div class="tdc_txt">下载豆瓣FM APP 让好音乐继续</div>
+            </div>
+            <div class="player">
+                <div class="player_title" th:text="${song.name}"></div>
+                <div class="player_author">柳工鸿</div>
+                <div class="player_control1">
+                    <div class="time">-03:34</div>
+                    <img class="voice" th:src="${'../pics/voice.png'}">
+                    <img class="lyric" th:src="${'../pics/lyric.png'}">
+                    <img class="downToPhone" th:src="${'../pics/downToPhone.png'}">
+                    <img class="share" id="share_btn" th:src="${'../pics/share.png'}">
+                </div>
+
+                <div class="player_proBar"></div>
+
+                <div class="player_control2">
+                    <img class="like" th:src="${'../pics/like.png'}">
+                    <img class="delete" th:src="${'../pics/delete.png'}">
+                    <img class="list" th:src="${'../pics/list.png'}">
+                    <img class="randomPlay" th:src="${'../pics/randomPlay.png'}">
+                    <img class="nextleft" th:src="${'../pics/nextleft.png'}">
+                    <img class="play" th:src="${'../pics/play.png'}">
+                    <img class="nextRight" th:src="${'../pics/nextRight.png'}">
+                </div>
+                <div class="player_sub">
+                    <span class="login_sign">登录/注册 </span>
+                    <span class="login_sub">后豆瓣FM将永久保留你的收听历史与喜好</span>
+                </div>
+
+            </div>
+        </div>
+        <img class="cover" th:src="${'../pics/cover.png'}">
+    </div>
+    <img class="up" th:src="${'../pics/upCycle.png'}">
+    <div class="buttom">
+        <div class="MHZ_but">
+            <img class="mhz_img" th:src="${'../pics/radio.png'}">
+            <div class="mhz_txt">兆赫</div>
+        </div>
+
+        <div  class="bottom_list">
+            <img class="list_img" th:src="${'../pics/songList.png'}">
+            <div class="list_txt">歌单</div>
+        </div>
+
+
+    </div>
+    <audio></audio>
+</div>
+
+</html>
